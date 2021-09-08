@@ -35,3 +35,22 @@ new WebpackBuildInfoPlugin(options)
 |outputFilename         |string      |build-info.json   |输出文件名    |  
 |outputGitInfo          |boolean     |true              |是否输出 git commit hash，默认为 true |  
 |extraBuildProperties   |object      |{}                |额外属性                             |  
+
+## Example
+
+生成的 build-info.json 示例：
+```json
+{
+    "hash": "ba40d5cc6739654e271b",
+    "startTime": 1631101585078,
+    "endTime": 1631101655628,
+    "osInfo": {
+        "arch": "x64",
+        "platform": "darwin",
+        "release": "20.4.0",
+        "type": "Darwin",
+        "username": "abc"
+    },
+    "commitHash": "7cfb3d4fd954134b8576d1a4f7decb84da6901aa"
+}
+```
