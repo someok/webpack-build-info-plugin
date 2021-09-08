@@ -1,0 +1,30 @@
+{
+  "name": "@someok/webpack-build-info-plugin",
+  "version": "1.0.0",
+  "description": "generate webpack build info to json",
+  "main": "src/index.js",
+  "scripts": {
+    "publish": "npm publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/someok/webpack-build-info-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "build"
+  ],
+  "author": {
+    "name": "JX Wang",
+    "email": "wjianxu@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/someok/webpack-build-info-plugin/issues"
+  },
+  "homepage": "https://github.com/someok/webpack-build-info-plugin#readme"
+}
