@@ -5,15 +5,17 @@ const path = require('path');
 const PLUGIN_NAME = 'WebpackBuildInfoPlugin';
 
 class WebpackBuildInfoPlugin {
-    constructor(
-        options = {
-            outputFilename: 'build-info.json',
-            outputGitInfo: true,
-            outputOsInfo: true,
-            extraBuildProperties: {},
-        }
-    ) {
-        this.options = options;
+    constructor(options) {
+        this.options = Object.assign(
+            {},
+            {
+                outputFilename: 'build-info.json',
+                outputGitInfo: true,
+                outputOsInfo: true,
+                extraBuildProperties: {},
+            },
+            options
+        );
     }
 
     apply(compiler) {
